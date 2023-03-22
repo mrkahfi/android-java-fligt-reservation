@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arenatiket.android.ContactInfoActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/countDownLayout"
+        android:layout_below="@+id/tool_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/flightInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/confirmTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
+                    android:text="@string/confirm_text"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flightInfoLayout"
+                android:layout_margin="@dimen/activity_horizontal_margin_narrow"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/formLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/methodTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingTop="@dimen/activity_horizontal_margin_very_narrow"
+                        android:text="Metode Pembayaran"
+                        android:textColor="@color/gray13" />
+
+                    <EditText
+                        android:id="@+id/methodEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Transfer Bank"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/methodSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/payment_method_choices"></Spinner>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:background="@color/gray11" />
+
+                    <TextView
+                        android:id="@+id/dateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingTop="@dimen/activity_horizontal_margin_very_narrow"
+                        android:text="Tanggal Transfer"
+                        android:textColor="@color/gray13" />
+
+                    <EditText
+                        android:id="@+id/dateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="5 SEPTEMBER 2016"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/dateSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:background="@color/gray11" />
+
+
+                    <TextView
+                        android:id="@+id/bankNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingTop="@dimen/activity_horizontal_margin_very_narrow"
+                        android:text="Nama Bank Pengirim"
+                        android:textColor="@color/gray13" />
+
+                    <EditText
+                        android:id="@+id/bankNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+                    <TextView
+                        android:id="@+id/bankAccountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingTop="@dimen/activity_horizontal_margin_very_narrow"
+                        android:text="Rekening Tujuan"
+                        android:textColor="@color/gray13" />
+
+                    <EditText
+                        android:id="@+id/bankAccountEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Bank Mandiri KCP Yogyakarta"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/bankAccountSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/bank_choices"></Spinner>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:background="@color/gray11" />
+
+                    <TextView
+                        android:id="@+id/amountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingTop="@dimen/activity_horizontal_margin_very_narrow"
+                        android:text="Jumlah Transfer"
+                        android:textColor="@color/gray13" />
+
+                    <EditText
+                        android:id="@+id/amountEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/bookingCodeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingLeft="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingRight="@dimen/activity_horizontal_margin_very_narrow"
+                        android:paddingTop="@dimen/activity_horizontal_margin_very_narrow"
+                        android:text="Kode Booking"
+                        android:textColor="@color/gray13" />
+
+                    <EditText
+                        android:id="@+id/bookingCodeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/confirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/bg_btn_primary"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:text="KONFIRMASI"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/confirmButton"
+                android:layout_below="@+id/cardView"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

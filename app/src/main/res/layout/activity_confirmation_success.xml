@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arenatiket.android.MBankingActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bookButton"
+        android:layout_below="@id/tool_bar"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin_narrow">
+
+
+            <TextView
+                android:id="@+id/succesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin_very_wide"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_very_wide"
+                android:text="PEMBAYARAN BERHASIL"
+                android:textColor="@color/green_dark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/greenCircleImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_above="@+id/thankyoutTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin_very_wide"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_very_wide"
+                android:adjustViewBounds="true"
+                android:background="@drawable/circle_green"
+                android:padding="32dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/success_icon_h" />
+
+            <TextView
+                android:id="@+id/thankyoutTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin_very_wide"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_very_wide"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/thank_you"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/bookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_btn_primary"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:text="PESAN"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDefault"
+    tools:context="com.arenatiket.android.BookingSummaryActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:background="@color/backgroundDefault">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundDefault"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/goDetailInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/keberangkatanTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryLight"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Keberangkatan - 5 SEP 2016"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin_narrow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7">
+
+                        <LinearLayout
+                            android:id="@+id/helperLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_alignBottom="@+id/detailLayout"
+                            android:layout_alignTop="@+id/detailLayout"
+                            android:gravity="top"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/activity_horizontal_margin"
+                            android:paddingTop="@dimen/activity_horizontal_margin"
+                            android:weightSum="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3" />
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="6dp"
+                                android:background="@color/gray13" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="0.7" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/detailLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingBottom="@dimen/activity_horizontal_margin"
+                                android:weightSum="1">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/departTimeTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="12:55"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/departPortTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="JOG"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical">
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_above="@+id/blueCircleView"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@color/backgroundDefault" />
+
+                                    <View
+                                        android:id="@+id/blueCircleView"
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/circle_blue" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/departPortDetailTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="0.7"
+                                    android:text="Adi Sutjipto, Yogyakarta"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/transitRouteLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/activity_horizontal_margin"
+                                android:visibility="visible"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:textSize="12sp" />
+
+                                <View
+                                    android:id="@+id/transitPointLayout"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/circle_gray" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="0.7"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/transitPointTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ngurah Rai, Bali"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/transitRoute2Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/activity_horizontal_margin"
+                                android:paddingTop="@dimen/activity_horizontal_margin_narrow"
+                                android:visibility="visible"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:textSize="12sp" />
+
+                                <View
+                                    android:id="@+id/transitPoint2Layout"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/circle_gray" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="0.7"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/transitPoint2TextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ngurah Rai, Bali"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/arriveTimeTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="17:20"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/arrivalPortTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="CGK"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical">
+
+                                    <View
+                                        android:id="@+id/redCircleView"
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/circle_red" />
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_below="@+id/redCircleView"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@color/backgroundDefault" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/arrivalPortDetailTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="0.7"
+                                    android:text="Soekarno-Hata, Jakarta"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_horizontal_margin_narrow">
+
+                        <ImageView
+                            android:id="@+id/airlineLogoImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/airasia" />
+
+                        <TextView
+                            android:id="@+id/airlineCodeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QZ 6584 "
+                            android:textColor="@color/gray13" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/activity_horizontal_margin_narrow"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/baggageImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_horizontal_margin_very_narrow"
+                            android:src="@drawable/luggage_on_icon" />
+
+                        <TextView
+                            android:id="@+id/baggageTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text="bagasi 20 kg"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/taxImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_horizontal_margin_very_narrow"
+                            android:src="@drawable/tax_off_icon" />
+
+                        <TextView
+                            android:id="@+id/taxTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text="airport tax"
+                            android:textColor="@color/gray13"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mealsImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_horizontal_margin_very_narrow"
+                            android:src="@drawable/meal_off_icon" />
+
+                        <TextView
+                            android:id="@+id/mealsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text="makan"
+                            android:textColor="@color/gray13"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/backDetailInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/kepulanganTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryLight"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Kepulangan - 7 SEP 2016"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin_narrow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7">
+
+                        <LinearLayout
+                            android:id="@+id/backHelperLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_alignBottom="@+id/backDetailLayout"
+                            android:layout_alignTop="@+id/backDetailLayout"
+                            android:gravity="top"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/activity_horizontal_margin"
+                            android:paddingTop="@dimen/activity_horizontal_margin"
+                            android:weightSum="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3" />
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="6dp"
+                                android:background="@color/gray13" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="0.7" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/backDetailLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingBottom="@dimen/activity_horizontal_margin"
+                                android:weightSum="1">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/backDepartTimeTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="12:55"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/backDepartPortTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="JOG"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical">
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_above="@+id/backBlueCircleView"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@color/backgroundDefault" />
+
+                                    <View
+                                        android:id="@+id/backBlueCircleView"
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/circle_blue" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/backDepartPortDetailTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="0.7"
+                                    android:text="Adi Sutjipto, Yogyakarta"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/backTransitRouteLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/activity_horizontal_margin"
+                                android:visibility="visible"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:textSize="12sp" />
+
+                                <View
+                                    android:id="@+id/backTransitPointLayout"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/circle_gray" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="0.7"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/backTransitPointTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ngurah Rai, Bali"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/backTransitRoute2Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/activity_horizontal_margin"
+                                android:paddingTop="@dimen/activity_horizontal_margin_narrow"
+                                android:visibility="visible"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:textSize="12sp" />
+
+                                <View
+                                    android:id="@+id/backTransitPoint2Layout"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/circle_gray" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="0.7"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/backTransitPoint2TextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ngurah Rai, Bali"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/backArriveTimeTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="17:20"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/backArrivalPortTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="CGK"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical">
+
+                                    <View
+                                        android:id="@+id/backRedCircleView"
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/circle_red" />
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_below="@+id/backRedCircleView"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@color/backgroundDefault" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/backArrivalPortDetailTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="0.7"
+                                    android:text="Soekarno-Hata, Jakarta"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_horizontal_margin_narrow">
+
+                        <ImageView
+                            android:id="@+id/backAirlineLogoImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/airasia" />
+
+                        <TextView
+                            android:id="@+id/backAirlineCodeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QZ 6584 "
+                            android:textColor="@color/gray13" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/activity_horizontal_margin_narrow"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/backBaggageImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_horizontal_margin_very_narrow"
+                            android:src="@drawable/luggage_on_icon" />
+
+                        <TextView
+                            android:id="@+id/backBaggageTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text="bagasi 20 kg"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/backTaxImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_horizontal_margin_very_narrow"
+                            android:src="@drawable/tax_off_icon" />
+
+                        <TextView
+                            android:id="@+id/backTaxTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text="airport tax"
+                            android:textColor="@color/gray13"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/backMealsImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_horizontal_margin_very_narrow"
+                            android:src="@drawable/meal_off_icon" />
+
+                        <TextView
+                            android:id="@+id/backMealsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text="makan"
+                            android:textColor="@color/gray13"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contactLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryLight"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Kontak"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin_narrow"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_horizontal_margin_narrow"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/contactNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trias Nur Rahman"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/contactEmailTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="contact@triasrahman.com"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/contactPhoneTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin_narrow"
+                        android:gravity="right|center_vertical"
+                        android:text="+62 818 2329 4234"
+                        android:textColor="@color/gray13"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passangerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin_narrow"
+                    android:background="@color/colorPrimaryLight"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Penumpang"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/priceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryLight"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Biaya"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:id="@+id/departFareLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_horizontal_margin_narrow"
+                    android:paddingRight="@dimen/activity_horizontal_margin_narrow"
+                    android:paddingTop="@dimen/activity_horizontal_margin_narrow">
+
+                    <TextView
+                        android:id="@+id/departSummaryTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_horizontal_margin_narrow"
+                        android:text="JOG > CGK x 3 orang"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/departFareTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin_narrow"
+                        android:gravity="right|center_vertical"
+                        android:text="Rp 9.931.200"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/backFareLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_horizontal_margin_narrow"
+                    android:paddingRight="@dimen/activity_horizontal_margin_narrow">
+
+                    <TextView
+                        android:id="@+id/backSummaryTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_horizontal_margin_narrow"
+                        android:text="CGK > JOG x 3 orang"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/backFareTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin_narrow"
+                        android:gravity="right|center_vertical"
+                        android:text="Rp 1.560.300"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin_narrow"
+                    android:paddingRight="@dimen/activity_horizontal_margin_narrow">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/activity_horizontal_margin_narrow"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text="HARGA TOTAL"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Termasuk pajak"
+                            android:textColor="@color/gray15"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:paddingBottom="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text="Rp "
+                            android:textColor="@color/colorPrimaryRed"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hargaDiskon1TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:paddingBottom="2dp"
+                            android:text="0"
+                            android:textColor="@color/colorPrimaryRed"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hargaDiskon2TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin_narrow"
+                            android:gravity="bottom"
+                            android:paddingBottom="@dimen/activity_horizontal_margin_very_narrow"
+                            android:text=".0"
+                            android:textColor="@color/colorPrimaryRed"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/termTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/activity_horizontal_margin_narrow"
+                    android:text="@string/have_read_term_cond" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bookButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/bg_btn_primary"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:text="PESAN SEKARANG"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

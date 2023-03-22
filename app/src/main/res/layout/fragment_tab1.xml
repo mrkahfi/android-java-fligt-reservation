@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin_narrow">
+
+    <RadioGroup
+        android:id="@+id/points_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/lowestPriceRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/abc_btn_radio_material"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Harga termurah"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/departDateRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/abc_btn_radio_material"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Waktu berangkat"
+            android:textColor="#000000" />
+
+
+        <RadioButton
+            android:id="@+id/arrivalDateRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/abc_btn_radio_material"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Waktu tiba"
+            android:textColor="#000000" />
+
+
+        <RadioButton
+            android:id="@+id/durationRadioButton"
+            android:layout_width="match_parent"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:drawableRight="@drawable/btn_radio_material"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Durasi"
+            android:textColor="#000000" />
+
+    </RadioGroup>
+</LinearLayout>

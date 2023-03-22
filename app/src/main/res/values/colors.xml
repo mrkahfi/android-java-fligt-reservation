@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4A90E2</color>
+    <color name="colorPrimaryLight">#F0F0FA</color>
+    <color name="colorPrimaryDark">#1B247D</color>
+    <color name="colorPrimaryYellow">#F39D1B</color>
+    <color name="backgroundPrimary">#F0F0FA</color>
+    <color name="backgroundDefault">#FAFAFA</color>
+    <color name="tabsScrollColor">#8a140e</color>
+    <color name="colorPrimaryRed">#98050A</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="green">#7ED321</color>
+    <color name="green_dark">#4E8A0E</color>
+
+    <!-- Grays -->
+    <color name="gray1">#f1f2f1</color>
+    <color name="gray2">#F2F2F2</color>
+    <color name="gray3">#ededed</color>
+    <color name="gray4">#ebeceb</color>
+    <color name="gray5">#EAEAEA</color>
+    <color name="gray6">#e4e4e4</color>
+    <color name="gray7">#d5d5d5</color>
+    <color name="gray8">#D2D2D2</color>
+    <color name="gray9">#cecece</color>
+    <color name="gray10">#C2C2C2</color>
+    <color name="gray11">#C9C9C9</color>
+    <color name="gray12">#c8c8c8</color>
+    <color name="gray13">#BEBEBE</color>
+    <color name="gray14">#BDBDBD</color>
+    <color name="gray15">#A4A4A4</color>
+    <color name="gray16">#818181</color>
+    <color name="gray17">#7A7A7A</color>
+    <color name="gray18">#767676</color>
+    <color name="gray19">#666666</color>
+    <color name="gray20">#656565</color>
+    <color name="gray21">#464646</color>
+
+
+    <!-- Transparent colors -->
+    <color name="transparent_white_five">#0Dffffff</color>
+    <color name="transparent_white_ten">#1Affffff</color>
+    <color name="transparent_white_twenty">#33ffffff</color>
+    <color name="transparent_white_thirty">#4Dffffff</color>
+    <color name="transparent_white_fifty">#80ffffff</color>
+    <color name="transparent_white_sixty">#99ffffff</color>
+    <color name="transparent_white_eighty">#CCffffff</color>
+    <color name="transparent_white_ninty">#E6ffffff</color>
+    <color name="transparent_white_ninty_five">#F2ffffff</color>
+
+    <color name="transparent_black_five">#0D000000</color>
+    <color name="transparent_black_ten">#1A000000</color>
+    <color name="transparent_black_twenty">#33000000</color>
+    <color name="transparent_black_thirty">#4D000000</color>
+    <color name="transparent_black_forty">#66000000</color>
+    <color name="transparent_black_fifty">#80000000</color>
+    <color name="transparent_black_sixty">#99000000</color>
+    <color name="transparent_black_eighty">#CC000000</color>
+    <color name="transparent_black_ninty">#E6000000</color>
+    <color name="transparent_black_ninty_five">#F2000000</color>
+
+
+    <color name="transparent_colorPrimary">#334A90E2</color>
+</resources>

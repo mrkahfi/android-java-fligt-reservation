@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Transparent"
+    tools:context="com.arenatiket.android.BookingProgressActivity">
+
+    <RelativeLayout
+        android:id="@+id/circleViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:theme="@style/Theme.Transparent">
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/circleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/activity_horizontal_margin_very_wide"
+            android:paddingLeft="@dimen/activity_horizontal_margin_very_wide"
+            android:paddingRight="@dimen/activity_horizontal_margin_very_wide"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            CircleProgressView:cpv_autoTextSize="true"
+            CircleProgressView:cpv_barColor="@color/colorPrimary"
+            CircleProgressView:cpv_barWidth="50dp"
+            CircleProgressView:cpv_blockCount="20"
+            CircleProgressView:cpv_blockScale="0.8"
+            CircleProgressView:cpv_contourSize="0dp"
+            CircleProgressView:cpv_maxValue="100"
+            CircleProgressView:cpv_rimColor="@color/colorPrimaryLight"
+            CircleProgressView:cpv_rimWidth="50dp"
+            CircleProgressView:cpv_showUnit="true"
+            CircleProgressView:cpv_spinColor="@color/colorPrimary"
+            CircleProgressView:cpv_textColor="@color/colorPrimaryLight"
+            CircleProgressView:cpv_textScale="1"
+            CircleProgressView:cpv_unit="%"
+            CircleProgressView:cpv_unitColor="@color/colorPrimaryLight"
+            CircleProgressView:cpv_unitPosition="right_top"
+            CircleProgressView:cpv_unitScale="1"
+            CircleProgressView:cpv_value="0" />
+    </RelativeLayout>
+</RelativeLayout>

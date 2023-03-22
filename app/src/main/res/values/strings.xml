@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Arenatiket</string>
+    <string name="confirm_text">Konfirmasikan pembayaran Anda yang menggunakan internet banking, SMS banking, atau m-banking</string>
+    <string name="title_activity_search_options">SearchOptionsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="thank_you">Terima kasih telah melakukan pemesanan di Arena Tiket. Silakan periksa di birthDate Anda johndoe@gmail.com untuk melihat e-ticket penerbangan Anda</string>
+    <string name="sentToEmail">Data reservasi juga terkirim ke email anda, tiket dikirim ke email setelah pembayaran selesai dilakukan</string>
+    <!--<string name="doku_public_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgWBPfOAR2eb4NdIMS+dBuEvj+GoFPEAuiygcZy74Rrstx5heiCOUz1Xf887QIKewM9Girdq+ucbHzPsrW9hf7oJpIysXWfbSJO+28kUfjlKrNqD6m6sp9STSTN06O2JgsPniMsNzq6KJHBVgSfDDImEztQ4WYW9cKhIIbHCcEVT/cM1nK88CbCYWjc4k8X0ishwnR5RZ2kwaSBVCF/BI9GhBPw53nrCOPU65vC2CAu1RQazLG1L2iLX1bQCFRid04g1DE6iRmvBGe5gsoTrsDAWT/scTbMqTPu4SxgF3AwBdKfZCwhcgZq/w+3YCz4iqaunnzVmqQZLyWE8jfoPzzQIDAQAB</string>-->
+    <string name="doku_shared_key">APw7wDLiu203</string>
+    <string name="doku_public_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAolf8zqWFCr0JZ43VzrLQhFFSnEu9FndrZNDVCRkjy+xbirfmImUkCnFMpWEMrz6JzrEnryjjPSxGxSLQSI9hxfUbY7R/fxXzcfibgj59m6twR+2aoBNVQ/Yn+9wXRMTDpfREnlHTWLf4D7D+KZkWNujOn9uU4LzcIHO/Q7T87Z1lNWPIwEPlOF2x9upMh7PK5+eFehuo5A+IrSuv1dNJU1JKdsHbdSdbFNSMLNrgQA/xsH1h+ncyfGA0yjNOcu8Z+M+R2oOYnJw3lXLrXMQG/5jLAUKQFM0OEJkJZSNY1VsSKQp6h0+EvhJfzpDv83WESw8OiLhu59VGYlCyJVlZNwIDAQAB</string>
+    <array name="payment_method_choices">
+        <item>Transfer Bank</item>
+        <item>Transfer ATM</item>
+        <item>Internet Banking</item>
+        <item>SMS Banking</item>
+    </array>
+    <array name="bank_choices">
+        <item>BNI</item>
+        <item>Bank Mandiri</item>
+        <item>BCA</item>
+        <item>BRI</item>
+    </array>
+    <string name="have_read_term_cond">Saya telah membaca dan menyetujui <u>Syarat dan Ketentuan</u>.</string>
+    <string name="colorPrimary">#4A90E2</string>
+    <string name="colorPrimaryDark">#4A90E2</string>
+    <string name="colorPrimaryLight">#4A90E2</string>
+    <string name="mandiriText">Pastikan bahwa kartu Anda telah diaktivasi melalui layanan Mandiri Internet Banking pada menu mandiri clickpay agar dapat melakukan transaksi Internet Payment.</string>
+    <string name="mandiriTextToken">Gunakan Token PIN Mandiri untuk bertransaksi. Nilai yang dimasukkan pada token Anda (Metode APPLI 3)</string>
+    <string name="challengeCode1">Challenge Code 1</string>
+    <string name="challengeCode2">Challenge Code 2</string>
+    <string name="challengeCode3">Challenge Code 3</string>
+
+    <string name="vaText1">Paycode digunakan untuk membayar melalui channel ATM dan minimarket. Sertakan kode ini saat membayar di ATM atau minimarket. </string>
+
+    <string name="vaResult">Kami menyarankan agar pembayaran dilakukan secepatnya setelah pembeluan online. Pembayaran akan berakhir sesuai dengan ketentuan merchant, dimana pembelian akan batal apabila melewati jangka waktu tersebut</string>
+
+</resources>
